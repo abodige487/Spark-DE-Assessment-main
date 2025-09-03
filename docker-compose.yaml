@@ -1,0 +1,11 @@
+services:
+  spark:
+    image: apache/spark:4.0.0
+    container_name: spark-connect
+    ports:
+      - "15002:15002"
+    volumes:
+      - "C:\\Users\\aravi\\OneDrive\\Desktop\\Spark-DE-Assessment-main\\Spark-DE-Assessment-main:/opt/spark/work-dir"
+    environment:
+      - PYARROW_IGNORE_TIMEZONE=1
+    command: ["/bin/bash","-lc","/opt/spark/sbin/start-connect-server.sh --host 0.0.0.0 --port 15002 && sleep infinity"]

@@ -1,0 +1,4 @@
+docker rm -f spark-connect 2>$null
+docker compose up -d --force-recreate
+docker ps
+docker logs spark-connect --tail 50

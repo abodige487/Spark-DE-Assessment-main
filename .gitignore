@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environments
+venv/
+env/
+.myenv/
+myenv/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# Spark / Hadoop
+derby.log
+metastore_db/
+spark-warehouse/
+*.crc
+*.avro
+*.parquet
+*.orc
+
+# Data files
+data/output.jsonl
+data/*.csv
+data/*.json
+data/*.parquet
+
+# Logs
+*.log
+*.out
+*.tmp
+
+# OS / IDE specific
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Artifacts
+artifacts/
