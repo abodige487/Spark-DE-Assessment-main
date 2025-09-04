@@ -1,4 +1,4 @@
-Spark-DE-Assessment
+**Spark-DE-Assessment**
 
 A small, self-contained data-engineering exercise using PySpark (Spark Connect).
 It reads JSONL input, applies transformations defined in assessment/, and writes a JSONL output for verification.
@@ -17,9 +17,9 @@ Spark-DE-Assessment-main/
 ├─ requirements.txt      # Python dependencies
 └─ README.md
 
-Prerequisites
+**Prerequisites**
 
-Python 3.10+ (recommended)
+Python 3.13
 
 Docker & Docker Compose (for Spark Connect server)
 
@@ -27,17 +27,17 @@ Git (optional, for version control)
 
 The project uses Spark Connect so you don't need local Hadoop/winutils.exe.
 
-Create and activate a virtual environment
-# Windows PowerShell
+**Create and activate a virtual environment**
+
 python -m venv myenv
 myenv/Scripts/activate
 
-Install dependencies
+**Install dependencies**
 pip install -r requirements.txt
 
-Start Spark Connect (Docker)
+**Start Spark Connect (Docker)**
 docker compose up -d
 
-Run the assessment
+**Run the assessment**
 python -m assessment
 
