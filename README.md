@@ -11,10 +11,12 @@ Spark-DE-Assessment-main/
 │  ├─ __main__.py        # Entry point: python -m assessment
 │  ├─ helpers.py         # Reusable utilities
 │  └─ transform.py       # Core transformations
+|
 ├─ data/
 │  ├─ edges.jsonl        # Input data
 │  └─ solution.jsonl     # Expected solution (for local check)
-├─ artifacts/            # (ignored) build/output artifacts if needed
+|
+├─ artifacts/            # (ignored) 
 ├─ docker-compose.yaml   # Spark Connect server (apache/spark:4.0.0)
 ├─ requirements.txt      # Python dependencies
 └─ README.md
