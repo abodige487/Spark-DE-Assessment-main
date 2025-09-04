@@ -69,7 +69,7 @@ def compute(edges: DataFrame) -> DataFrame:
         .dropDuplicates()
     )
 
-    # Defensive: no edges => empty output
+    #no edges => empty output
     if edges.limit(1).count() == 0:
         empty = edges.sql_ctx.createDataFrame([], schema=T.StructType([
             T.StructField("node", T.StringType()),
